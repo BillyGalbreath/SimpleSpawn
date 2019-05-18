@@ -1,0 +1,17 @@
+name: "${project.artifactId}"
+main: "${project.groupId}.${project.artifactId}"
+version: "${project.version}"
+description: "${project.artifactId} Plugin"
+author: "BillyGalbreath"
+load: "STARTUP"
+api-version: "1.13"
+
+commands:
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+
+permissions:
+  simplespawn.command.spawn:
+    description: Allows to use /spawn command
+    default: true
